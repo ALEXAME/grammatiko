@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for Inorganic Chemistry Naming">
+  <title>Datenschutz – Grammatiko</title>
+  <meta name="description" content="Datenschutzerklärung für Grammatiko">
+
   <style>
     :root {
       color-scheme: dark;
@@ -20,13 +21,20 @@
       --radius: 20px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
-        radial-gradient(circle at top, rgba(191, 232, 210, 0.09), transparent 30%),
+        radial-gradient(
+          circle at top,
+          rgba(191, 232, 210, 0.09),
+          transparent 30%
+        ),
         var(--bg);
       color: var(--text);
       line-height: 1.65;
@@ -38,39 +46,12 @@
       padding: 28px 0 56px;
     }
 
-    .topbar {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 20px;
-    }
-
-    .lang-switcher {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 14px;
-      border: 1px solid var(--border);
-      background: rgba(20, 33, 28, 0.92);
-      border-radius: 14px;
-      box-shadow: var(--shadow);
-    }
-
-    .lang-switcher label {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .lang-switcher select {
-      border: 1px solid var(--border);
-      background: var(--panel-2);
-      color: var(--text);
-      border-radius: 10px;
-      padding: 8px 10px;
-      font-size: 14px;
-    }
-
     .hero {
-      background: linear-gradient(180deg, rgba(20, 33, 28, 0.98), rgba(28, 48, 39, 0.98));
+      background: linear-gradient(
+        180deg,
+        rgba(20, 33, 28, 0.98),
+        rgba(28, 48, 39, 0.98)
+      );
       border: 1px solid var(--border);
       border-radius: 24px;
       padding: 28px;
@@ -120,10 +101,9 @@
       line-height: 1.2;
     }
 
-    p { margin: 0; }
-
-    .lang-block { display: none; }
-    .lang-block.active { display: block; }
+    p {
+      margin: 0;
+    }
 
     @media (max-width: 640px) {
       .wrap {
@@ -131,214 +111,74 @@
         padding-top: 16px;
       }
 
-      .topbar { justify-content: stretch; }
-
-      .lang-switcher {
-        width: 100%;
-        justify-content: space-between;
+      .hero,
+      .card {
+        padding: 18px;
       }
-
-      .hero, .card { padding: 18px; }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <div class="lang-switcher">
-        <label for="lang">Language</label>
-        <select id="lang" aria-label="Select language">
-          <option value="de">Deutsch</option>
-          <option value="en">English</option>
-          <option value="fr">Français</option>
-          <option value="es">Español</option>
-        </select>
-      </div>
-    </div>
+    <header class="hero">
+      <p class="eyebrow">Grammatiko</p>
+      <h1>Datenschutz</h1>
+      <p class="subtitle">Wie Daten und Käufe behandelt werden</p>
+      <p class="updated">Zuletzt aktualisiert: 11. September 2026</p>
+    </header>
 
-    <main class="lang-block" data-lang="de">
-      <header class="hero">
-        <p class="eyebrow">Inorganic Chemistry Naming</p>
-        <h1>Datenschutz</h1>
-        <p class="subtitle">Wie Daten und Käufe behandelt werden</p>
-        <p class="updated">Zuletzt aktualisiert: 2. August 2026</p>
-      </header>
+    <section class="card">
+      <h2>Datenerhebung</h2>
+      <p>
+        Die App erhebt, speichert oder übermittelt keine direkt
+        identifizierenden personenbezogenen Daten wie deinen Namen,
+        deine E-Mail-Adresse oder deinen genauen Standort.
+      </p>
+    </section>
 
-      <section class="card">
-        <h2>Datenerhebung</h2>
-        <p>Die App erhebt, speichert oder übermittelt keine direkt identifizierenden personenbezogenen Daten wie deinen Namen, deine E-Mail-Adresse oder deinen genauen Standort.</p>
-      </section>
+    <section class="card">
+      <h2>Diagnose- und Analysedaten</h2>
+      <p>
+        Die App verwendet keine Analyse-, Tracking- oder
+        Crash-Reporting-Dienste von Drittanbietern.
+      </p>
+    </section>
 
-      <section class="card">
-        <h2>Diagnose- und Analysedaten</h2>
-        <p>Die App verwendet keine Analyse-, Tracking- oder Crash-Reporting-Dienste von Drittanbietern.</p>
-      </section>
+    <section class="card">
+      <h2>Käufe</h2>
+      <p>
+        Premium-Käufe werden sicher über Apple StoreKit und den App Store
+        abgewickelt. Die App verarbeitet oder speichert Zahlungsinformationen
+        nicht direkt.
+      </p>
+    </section>
 
-      <section class="card">
-        <h2>Käufe</h2>
-        <p>Premium-Käufe werden sicher über Apple StoreKit und den App Store abgewickelt. Die App verarbeitet oder speichert Zahlungsinformationen nicht direkt.</p>
-      </section>
+    <section class="card">
+      <h2>Drittanbieter-Dienste</h2>
+      <p>
+        Für die Abwicklung von In-App-Käufen wird ausschließlich Apple
+        StoreKit verwendet. Apple kann kaufbezogene Daten gemäß den eigenen
+        Datenschutzbestimmungen verarbeiten.
+      </p>
+    </section>
 
-      <section class="card">
-        <h2>Drittanbieter-Dienste</h2>
-        <p>Für die Abwicklung von In-App-Käufen wird ausschließlich Apple StoreKit verwendet. Apple kann kaufbezogene Daten gemäß den eigenen Datenschutzbestimmungen verarbeiten.</p>
-      </section>
+    <section class="card">
+      <h2>Datenweitergabe</h2>
+      <p>
+        Der Entwickler verkauft, vermietet oder teilt keine personenbezogenen
+        Daten. Kaufbezogene Informationen werden ausschließlich durch Apple
+        verarbeitet, soweit dies für die Kaufabwicklung erforderlich ist.
+      </p>
+    </section>
 
-      <section class="card">
-        <h2>Datenweitergabe</h2>
-        <p>Der Entwickler verkauft, vermietet oder teilt keine personenbezogenen Daten. Kaufbezogene Informationen werden ausschließlich durch Apple verarbeitet, soweit dies für die Kaufabwicklung erforderlich ist.</p>
-      </section>
-
-      <section class="card">
-        <h2>Kontakt</h2>
-        <p>Wenn du Fragen zum Datenschutz hast, kontaktiere bitte: me@alexmehanic.com</p>
-      </section>
-    </main>
-
-    <main class="lang-block" data-lang="en">
-      <header class="hero">
-        <p class="eyebrow">Inorganic Chemistry Naming</p>
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">How data and purchases are handled</p>
-        <p class="updated">Last updated: August 2, 2026</p>
-      </header>
-
-      <section class="card">
-        <h2>Data Collection</h2>
-        <p>The app does not collect, store, or transmit directly identifying personal information such as your name, email address, or precise location.</p>
-      </section>
-
-      <section class="card">
-        <h2>Diagnostics and Analytics</h2>
-        <p>The app does not use third-party analytics, tracking, or crash-reporting services.</p>
-      </section>
-
-      <section class="card">
-        <h2>Purchases</h2>
-        <p>Premium purchases are handled securely through Apple StoreKit and the App Store. The app does not directly process or store your payment information.</p>
-      </section>
-
-      <section class="card">
-        <h2>Third-Party Services</h2>
-        <p>Apple StoreKit is used solely to process in-app purchases. Apple may process purchase-related data according to its own privacy policy.</p>
-      </section>
-
-      <section class="card">
-        <h2>Data Sharing</h2>
-        <p>The developer does not sell, rent, or share personal information. Purchase-related information is processed only by Apple where necessary to complete a purchase.</p>
-      </section>
-
-      <section class="card">
-        <h2>Contact</h2>
-        <p>If you have questions regarding privacy, please contact: me@alexmehanic.com</p>
-      </section>
-    </main>
-
-    <main class="lang-block" data-lang="fr">
-      <header class="hero">
-        <p class="eyebrow">Inorganic Chemistry Naming</p>
-        <h1>Politique de confidentialité</h1>
-        <p class="subtitle">Comment les données et les achats sont traités</p>
-        <p class="updated">Dernière mise à jour : 2 août 2026</p>
-      </header>
-
-      <section class="card">
-        <h2>Collecte de données</h2>
-        <p>L’application ne collecte, ne stocke et ne transmet aucune donnée personnelle directement identifiable, telle que votre nom, votre adresse e-mail ou votre localisation précise.</p>
-      </section>
-
-      <section class="card">
-        <h2>Diagnostic et analyse</h2>
-        <p>L’application n’utilise aucun service tiers d’analyse, de suivi ou de rapport de plantage.</p>
-      </section>
-
-      <section class="card">
-        <h2>Achats</h2>
-        <p>Les achats premium sont gérés de manière sécurisée via Apple StoreKit et l’App Store. L’application ne traite ni ne stocke directement vos informations de paiement.</p>
-      </section>
-
-      <section class="card">
-        <h2>Services tiers</h2>
-        <p>Apple StoreKit est utilisé uniquement pour traiter les achats intégrés. Apple peut traiter les données liées aux achats conformément à sa propre politique de confidentialité.</p>
-      </section>
-
-      <section class="card">
-        <h2>Partage des données</h2>
-        <p>Le développeur ne vend, ne loue et ne partage aucune information personnelle. Les informations liées aux achats sont traitées uniquement par Apple lorsque cela est nécessaire pour effectuer un achat.</p>
-      </section>
-
-      <section class="card">
-        <h2>Contact</h2>
-        <p>Si vous avez des questions concernant la confidentialité, veuillez contacter : me@alexmehanic.com</p>
-      </section>
-    </main>
-
-    <main class="lang-block" data-lang="es">
-      <header class="hero">
-        <p class="eyebrow">Inorganic Chemistry Naming</p>
-        <h1>Política de privacidad</h1>
-        <p class="subtitle">Cómo se gestionan los datos y las compras</p>
-        <p class="updated">Última actualización: 2 de agosto de 2026</p>
-      </header>
-
-      <section class="card">
-        <h2>Recopilación de datos</h2>
-        <p>La aplicación no recopila, almacena ni transmite datos personales de identificación directa, como tu nombre, correo electrónico o ubicación precisa.</p>
-      </section>
-
-      <section class="card">
-        <h2>Diagnóstico y análisis</h2>
-        <p>La aplicación no utiliza servicios de análisis, seguimiento ni informes de fallos de terceros.</p>
-      </section>
-
-      <section class="card">
-        <h2>Compras</h2>
-        <p>Las compras premium se gestionan de forma segura mediante Apple StoreKit y la App Store. La aplicación no procesa ni almacena directamente tu información de pago.</p>
-      </section>
-
-      <section class="card">
-        <h2>Servicios de terceros</h2>
-        <p>Apple StoreKit se utiliza exclusivamente para procesar compras dentro de la aplicación. Apple puede procesar datos relacionados con las compras de acuerdo con su propia política de privacidad.</p>
-      </section>
-
-      <section class="card">
-        <h2>Compartición de datos</h2>
-        <p>El desarrollador no vende, alquila ni comparte información personal. La información relacionada con las compras es procesada únicamente por Apple cuando sea necesario para completar una compra.</p>
-      </section>
-
-      <section class="card">
-        <h2>Contacto</h2>
-        <p>Si tienes preguntas sobre privacidad, ponte en contacto con: me@alexmehanic.com</p>
-      </section>
-    </main>
+    <section class="card">
+      <h2>Kontakt</h2>
+      <p>
+        Wenn du Fragen zum Datenschutz hast, kontaktiere bitte:
+        me@alexmehanic.com
+      </p>
+    </section>
   </div>
-
-  <script>
-    const select = document.getElementById('lang');
-    const blocks = document.querySelectorAll('.lang-block');
-
-    function setLanguage(lang) {
-      blocks.forEach(block => {
-        block.classList.toggle('active', block.dataset.lang === lang);
-      });
-
-      document.documentElement.lang = lang;
-      select.value = lang;
-      localStorage.setItem('privacy_lang', lang);
-
-      const active = document.querySelector(`.lang-block[data-lang="${lang}"] h1`);
-      if (active) document.title = active.textContent;
-    }
-
-    const supportedLanguages = ['de', 'en', 'fr', 'es'];
-    const saved = localStorage.getItem('privacy_lang');
-    const browserLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
-    const initial = supportedLanguages.includes(saved)
-      ? saved
-      : (supportedLanguages.includes(browserLang) ? browserLang : 'en');
-
-    select.addEventListener('change', event => setLanguage(event.target.value));
-    setLanguage(initial);
-  </script>
 </body>
 </html>
